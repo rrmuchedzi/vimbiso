@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/margin_horizonatal_sides"
+    android:paddingRight="@dimen/margin_horizonatal_sides">
+    <!--tools:showIn="@layout/activity_add_medication_reminder">-->
+
+    <TextView
+        android:id="@+id/label_form_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time Schedule"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/form_label_text_size"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:id="@+id/form_times_frequency_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_form_time"
+        android:layout_marginTop="@dimen/margin_vertical_sides"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/label_form_medication_frequency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Take Medication"
+            android:textSize="@dimen/form_label_text_size"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/margin_vertical_sides"/>
+
+        <Spinner
+            android:id="@+id/form_medication_time_frequency_selection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/form_times_container_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/form_times_frequency_container"
+        android:layout_marginTop="@dimen/margin_vertical_sides"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <Button
+            android:id="@+id/form_time_1_schedule_selector"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/time_selection_background"
+            android:ems="10"
+            android:hint="@string/form_button_time_selection_hint"
+            android:inputType="time"
+            android:maxLength="@integer/form_max_medication_length"
+            android:padding="@dimen/time_selection_padding"
+            android:textAlignment="center"/>
+
+        <Button
+            android:id="@+id/form_time_2_schedule_selector"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_vertical_sides"
+            android:layout_weight="1"
+            android:background="@color/time_selection_background"
+            android:ems="10"
+            android:hint="@string/form_button_time_selection_hint"
+            android:inputType="time"
+            android:maxLength="@integer/form_max_medication_length"
+            android:padding="@dimen/time_selection_padding"
+            android:textAlignment="center"/>
+
+        <Button
+            android:id="@+id/form_time_3_schedule_selector"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_vertical_sides"
+            android:layout_weight="1"
+            android:background="@color/time_selection_background"
+            android:ems="10"
+            android:hint="@string/form_button_time_selection_hint"
+            android:inputType="time"
+            android:maxLength="@integer/form_max_medication_length"
+            android:padding="@dimen/time_selection_padding"
+            android:textAlignment="center"/>
+
+        <Button
+            android:id="@+id/form_time_4_schedule_selector"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_vertical_sides"
+            android:layout_weight="1"
+            android:background="@color/time_selection_background"
+            android:ems="10"
+            android:hint="@string/form_button_time_selection_hint"
+            android:inputType="time"
+            android:maxLength="@integer/form_max_medication_length"
+            android:padding="@dimen/time_selection_padding"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/form_times_container_below"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/form_times_container_top"
+        android:layout_marginTop="@dimen/margin_vertical_sides"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <Button
+            android:id="@+id/form_time_5_schedule_selector"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/time_selection_background"
+            android:ems="10"
+            android:hint="@string/form_button_time_selection_hint"
+            android:inputType="time"
+            android:maxLength="@integer/form_max_medication_length"
+            android:padding="@dimen/time_selection_padding"
+            android:textAlignment="center"/>
+
+        <Button
+            android:id="@+id/form_time_6_schedule_selector"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_vertical_sides"
+            android:layout_weight="1"
+            android:background="@color/time_selection_background"
+            android:ems="10"
+            android:hint="@string/form_button_time_selection_hint"
+            android:inputType="time"
+            android:maxLength="@integer/form_max_medication_length"
+            android:padding="@dimen/time_selection_padding"
+            android:textAlignment="center"/>
+
+        <Button
+            android:id="@+id/form_time_7_schedule_selector"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_vertical_sides"
+            android:layout_weight="1"
+            android:background="@color/time_selection_background"
+            android:ems="10"
+            android:hint="@string/form_button_time_selection_hint"
+            android:inputType="time"
+            android:maxLength="@integer/form_max_medication_length"
+            android:padding="@dimen/time_selection_padding"
+            android:textAlignment="center"/>
+
+        <Button
+            android:id="@+id/form_time_8_schedule_selector"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_vertical_sides"
+            android:layout_weight="1"
+            android:background="@color/time_selection_background"
+            android:ems="10"
+            android:hint="@string/form_button_time_selection_hint"
+            android:inputType="time"
+            android:maxLength="@integer/form_max_medication_length"
+            android:padding="@dimen/time_selection_padding"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/form_medication_notes_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/form_times_container_below"
+        android:layout_marginTop="@dimen/margin_vertical_sides"
+        android:layout_marginBottom="@dimen/margin_vertical_sides"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/label_form_notes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notes"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/form_label_text_size"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/form_medication_notes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

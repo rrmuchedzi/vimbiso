@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rrmuchedzi.vimbisomedicare.DoctorViewerActivity">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/form_doctor_entry_change_avatar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/avatar_1"
+        app:civ_border_color="#ffffff"
+        app:civ_border_width="2dp"
+        app:civ_circle_background_color="@color/dark_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/view_doctor_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/form_doctor_entry_change_avatar"
+        tools:text="Dr Orain Moe"/>
+
+    <TextView
+        android:id="@+id/view_doctor_speciality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_doctor_name"
+        tools:text="Speciality"/>
+
+    <ImageView
+        android:id="@+id/view_doctor_firstphoneicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/viewer_doctor_phone_one_description"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/viewer_doctor_phone_one"
+        app:srcCompat="@drawable/ic_call_24px"/>
+
+    <TextView
+        android:id="@+id/viewer_doctor_phone_one"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/view_doctor_firstphoneicon"
+        app:layout_constraintTop_toBottomOf="@+id/view_doctor_speciality"
+        tools:text="00099-818-85"/>
+
+    <TextView
+        android:id="@+id/viewer_doctor_phone_one_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/viewer_doctor_phone_one"
+        app:layout_constraintStart_toStartOf="@+id/viewer_doctor_phone_one"
+        app:layout_constraintTop_toBottomOf="@+id/viewer_doctor_phone_one"
+        tools:text="Mobile"/>
+
+    <TextView
+        android:id="@+id/viewer_doctor_phone_two"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/viewer_doctor_phone_one_description"
+        app:layout_constraintTop_toBottomOf="@+id/viewer_doctor_phone_one_description"
+        tools:text="000353-67676-2"/>
+
+    <ImageView
+        android:id="@+id/view_doctor_secondphoneicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/viewer_doctor_phone_two_description"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/viewer_doctor_phone_two"
+        app:srcCompat="@drawable/ic_call_24px"/>
+
+    <TextView
+        android:id="@+id/viewer_doctor_phone_two_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/viewer_doctor_phone_two"
+        app:layout_constraintStart_toStartOf="@+id/viewer_doctor_phone_two"
+        app:layout_constraintTop_toBottomOf="@+id/viewer_doctor_phone_two"
+        tools:text="Office"/>
+
+    <ImageView
+        android:id="@+id/view_doctor_email_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="12dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/viewer_doctor_email"
+        app:layout_constraintEnd_toStartOf="@+id/viewer_doctor_email"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/viewer_doctor_email"
+        app:srcCompat="@drawable/ic_email_24px"/>
+
+    <TextView
+        android:id="@+id/viewer_doctor_email"
+        android:layout_width="0dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="24dp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/viewer_doctor_phone_two_description"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/viewer_doctor_phone_two_description"
+        app:layout_constraintTop_toBottomOf="@+id/viewer_doctor_phone_two_description"
+        tools:text="doctoremail@gmail.com"/>
+
+    <ImageView
+        android:id="@+id/view_doctor_noteicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/viewer_doctor_notes"
+        app:layout_constraintEnd_toStartOf="@+id/viewer_doctor_notes"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/view_doctor_email_icon"
+        app:layout_constraintTop_toTopOf="@+id/viewer_doctor_notes"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_note_24px"/>
+
+    <TextView
+        android:id="@+id/viewer_doctor_notes"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="24dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/viewer_doctor_email"
+        app:layout_constraintTop_toBottomOf="@+id/viewer_doctor_email"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="Doctor Notes"/>
+
+</android.support.constraint.ConstraintLayout>
+

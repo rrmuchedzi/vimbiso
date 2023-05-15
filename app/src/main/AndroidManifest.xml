@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.rrmuchedzi.vimbisomedicare">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/vimbiso_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".AlarmReciever"/>
+
+        <provider
+            android:name=".ApplicationContentProvider"
+            android:authorities="com.example.rrmuchedzi.vimbisomedicare.provider"
+            android:exported="false"/>
+
+        <activity
+            android:name=".HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".HealthAndMedicalActivity"
+            android:label="@string/title_activity_health_and_medical"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".FeedReaderActivity"
+            android:label="@string/title_feed_Reader">
+        </activity>
+        <activity
+            android:name=".PillAndMedsReminderActivity"
+            android:label="@string/title_activity_pill_and_meds_reminder"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".DayViewPillsAndMedsActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".AddMedicationReminderActivity"
+            android:label="@string/title_activity_add_medication"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+            android:name=".DoctorsActivity"
+            android:label="@string/title_activity_doctors"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".AddDoctorActivity"
+            android:label="@string/title_activity_add_doctor"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+            android:name=".DoctorViewerActivity"
+            android:label="">
+        </activity>
+        <activity
+            android:name=".AboutActivity"
+            android:label="About Application">
+        </activity>
+        <activity
+            android:name=".BookmarksActivity"
+            android:label="Saved Articles"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".AddAppointmentActivity"
+            android:label="Add Appointment"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+            android:name=".AppointmentsActivity"
+            android:label="Appointments">
+        </activity>
+        <activity
+            android:name=".AppointmentViewerActivity"
+            android:label="Appointment Details">
+        </activity>
+        <activity android:name=".HistoryActivity"
+            android:label="Medication History">
+        </activity>
+    </application>
+
+</manifest>

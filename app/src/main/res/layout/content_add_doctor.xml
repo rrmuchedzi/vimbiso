@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.rrmuchedzi.vimbisomedicare.AddDoctorActivity"
+    tools:showIn="@layout/activity_add_doctor">
+
+    <android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/form_doctor_entry_change_avatar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/avatar_1"
+            app:civ_border_color="@color/colorPrimary"
+            app:civ_border_width="2dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <EditText
+            android:id="@+id/form_doctor_entry_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="Doctor's Name"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="@+id/form_doctor_entry_change_avatar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/form_doctor_entry_change_avatar"
+            app:layout_constraintTop_toTopOf="@+id/form_doctor_entry_change_avatar"/>
+
+        <EditText
+            android:id="@+id/form_doctor_entry_speciality"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="Speciality"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/form_doctor_entry_name"
+            app:layout_constraintTop_toBottomOf="@+id/form_doctor_entry_change_avatar"/>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/form_doctor_entry_speciality"
+            app:srcCompat="@drawable/ic_phone_black_24dp"/>
+
+        <Spinner
+            android:id="@+id/form_doctor_entry_spiner_number_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/form_doctor_entry_phone_number_one"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/form_doctor_entry_phone_number_one"
+            app:layout_constraintTop_toTopOf="@+id/form_doctor_entry_phone_number_one"/>
+
+        <TextView
+            android:id="@+id/form_doctor_entry_add_extra_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="ADD NUMBER"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/form_doctor_entry_phone_number_one"
+            app:layout_constraintStart_toStartOf="@+id/form_doctor_entry_phone_number_one"
+            app:layout_constraintTop_toBottomOf="@+id/form_doctor_entry_phone_number_two"
+            />
+
+        <EditText
+            android:id="@+id/form_doctor_entry_phone_number_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="phone"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+            app:layout_constraintStart_toStartOf="@+id/form_doctor_entry_speciality"
+            app:layout_constraintTop_toTopOf="@+id/imageView2"/>
+
+        <EditText
+            android:id="@+id/form_doctor_entry_phone_number_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="phone"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/form_doctor_entry_phone_number_one"
+            app:layout_constraintStart_toStartOf="@+id/form_doctor_entry_phone_number_one"
+            app:layout_constraintTop_toBottomOf="@+id/form_doctor_entry_phone_number_one"/>
+
+        <Spinner
+            android:id="@+id/form_doctor_entry_spinner_number_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/form_doctor_entry_phone_number_two"
+            app:layout_constraintEnd_toEndOf="@+id/form_doctor_entry_spiner_number_one"
+            app:layout_constraintStart_toStartOf="@+id/form_doctor_entry_spiner_number_one"
+            app:layout_constraintTop_toTopOf="@+id/form_doctor_entry_phone_number_two"/>
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView2"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/form_doctor_entry_add_extra_number"
+            app:srcCompat="@drawable/ic_email_black_24dp"/>
+
+        <EditText
+            android:id="@+id/form_doctor_entry_email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/form_doctor_entry_speciality"
+            app:layout_constraintTop_toTopOf="@+id/imageView3"/>
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView3"
+            app:layout_constraintStart_toStartOf="@+id/imageView3"
+            app:layout_constraintTop_toBottomOf="@+id/form_doctor_entry_email"
+            app:srcCompat="@drawable/ic_location_on_black_24dp"/>
+
+        <EditText
+            android:id="@+id/form_doctor_entry_address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Address"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+            app:layout_constraintEnd_toEndOf="@+id/form_doctor_entry_email"
+            app:layout_constraintStart_toStartOf="@+id/form_doctor_entry_email"
+            app:layout_constraintTop_toTopOf="@+id/imageView4"/>
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView4"
+            app:layout_constraintStart_toStartOf="@+id/imageView4"
+            app:layout_constraintTop_toBottomOf="@+id/form_doctor_entry_address"
+            app:srcCompat="@drawable/ic_icon_hospital_buildings"/>
+
+        <EditText
+            android:id="@+id/form_doctor_entry_hospital_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Hospital Name"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+            app:layout_constraintEnd_toEndOf="@+id/form_doctor_entry_address"
+            app:layout_constraintStart_toStartOf="@+id/form_doctor_entry_address"
+            app:layout_constraintTop_toTopOf="@+id/imageView5"/>
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/form_doctor_entry_notes"
+            app:layout_constraintEnd_toEndOf="@+id/imageView5"
+            app:layout_constraintStart_toStartOf="@+id/imageView5"
+            app:layout_constraintTop_toTopOf="@+id/form_doctor_entry_notes"
+            app:srcCompat="@drawable/ic_note_add_black_24dp"/>
+
+        <EditText
+            android:id="@+id/form_doctor_entry_notes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="Notes"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/form_doctor_entry_hospital_name"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/form_doctor_entry_hospital_name"
+            app:layout_constraintTop_toBottomOf="@+id/form_doctor_entry_hospital_name"/>
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

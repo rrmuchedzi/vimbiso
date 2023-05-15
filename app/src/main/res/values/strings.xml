@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">Vimbiso Medi Care</string>
+    <string name="title_activity_health_and_medical">Health And Medical Feed</string>
+    <string name="title_feed_Reader">Article Feed</string>
+    <string name="browse_feed_description">Health and News Feed Entry Image</string>
+    <string name="empty_feed_entries_title">No News At the moment</string>
+    <string name="empty_feed_entries_description">No News Updates at the moment, please try again later</string>
+    <string name="feed_image_description">Health and News Feed Entry Image</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In condimentum malesuada aliquam. Sed at rutrum lorem, vitae efficitur nisi. Etiam scelerisque justo ut imperdiet eleifend. Vivamus accumsan libero et interdum elementum. Nullam sodales, purus quis aliquet gravida, nibh leo condimentum leo, id eleifend ligula ex at metus. Donec eu mollis justo.</string>
+    <string name="title_activity_pill_and_meds_reminder">Pills And Medication</string>
+    <string name="title_activity_day_viewer_pill_and_meds">Day Viewer Pills And Medication</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_day_view_pills_and_meds">DayViewPillsAndMedsActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_add_medication">Add Medication</string>
+    <string name="form_starting_date_hint">Select Start Date</string>
+    <string name="form_medication_quantity_hint">1</string>
+    <string name="form_enter_medication_name">Enter Medication Name</string>
+    <string name="form_button_time_selection_hint">12:00AM</string>
+
+    <!-- FORM: Spinner Entries -->
+    <string-array name="form_medication_spinner_entries">
+        <item>pills</item>
+        <item>ml</item>
+        <item>drops</item>
+    </string-array>
+
+    <!-- FORM: Spinner Entries -->
+    <string-array name="form_medication_time_frequency_entries">
+        <item>Once a Day</item>
+        <item>Twice a Day</item>
+        <item>Thrice a Day</item>
+        <item>4 times a day</item>
+        <item>5 times a day</item>
+        <item>6 times a day</item>
+        <item>7 times a day</item>
+        <item>8 times a day</item>
+    </string-array>
+
+    <!-- FORM: Spinner Entries -->
+    <string-array name="form_medication_duration">
+        <item>Days</item>
+        <item>Months</item>
+    </string-array>
+
+    <!-- FORM: Spinner Entries -->
+    <string-array name="form_doctor_entry_phone_types">
+        <item>Mobile</item>
+        <item>Office</item>
+    </string-array>
+
+
+    <string name="title_activity_doctors">Doctors</string>
+    <string name="no_doctor_saved_message">No Doctors saved yet, Click the Add Button below to add your first doctor</string>
+    <string name="title_activity_add_doctor">Add Doctor</string>
+    <string name="title_activity_settings">Settings</string>
+</resources>

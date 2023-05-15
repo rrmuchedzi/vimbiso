@@ -1,0 +1,19 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="feed_img_header">225dp</dimen>
+    <dimen name="feed_img_block">55dp</dimen>
+    <dimen name="fav_button">40dp</dimen>
+    <dimen name="margin_horizonatal_sides">8dp</dimen>
+    <dimen name="margin_vertical_sides">8dp</dimen>
+    <dimen name="feed_reader_linespacing">4dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+    <dimen name="navigation_header">200dp</dimen>
+    <dimen name="medication_pillimage_size">40dp</dimen>
+    <dimen name="medication_tickbox_size">30dp</dimen>
+    <dimen name="form_label_text_size">16sp</dimen>
+    <dimen name="drawer_header_size">200dp</dimen>
+    <dimen name="time_selection_padding">5dp</dimen>
+</resources>

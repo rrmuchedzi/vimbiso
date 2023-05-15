@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/margin_horizonatal_sides"
+    android:paddingRight="@dimen/margin_horizonatal_sides"
+    tools:showIn="@layout/activity_add_medication_reminder">
+
+    <LinearLayout
+        android:id="@+id/form_dates_selector_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="7">
+
+        <CheckBox
+            android:id="@+id/form_day_monday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="M"/>
+
+        <CheckBox
+            android:id="@+id/form_day_tuesday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="T"/>
+
+        <CheckBox
+            android:id="@+id/form_day_wednesday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="W"/>
+
+        <CheckBox
+            android:id="@+id/form_day_thursday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Th"/>
+
+        <CheckBox
+            android:id="@+id/form_day_friday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="F"/>
+
+        <CheckBox
+            android:id="@+id/form_day_saturday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sat"/>
+
+        <CheckBox
+            android:id="@+id/form_day_sunday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sun"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="3"
+        android:layout_marginTop="@dimen/margin_vertical_sides"
+        android:layout_below="@+id/form_dates_selector_container">
+
+        <TextView
+            android:id="@+id/label_duration_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Duration"
+            android:layout_weight="1"
+            android:textSize="@dimen/form_label_text_size"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/form_medication_duration_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_vertical_sides"
+            android:layout_marginRight="@dimen/margin_vertical_sides"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLength="2"
+            android:text="1"
+            android:textAlignment="textEnd"/>
+
+        <Spinner
+            android:id="@+id/form_medication_spinner_duration_specification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:layout_toRightOf="@+id/duration_textView"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

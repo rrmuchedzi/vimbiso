@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#03a9f4</color>
+    <color name="colorPrimaryDark">#007ac1</color>
+    <color name="colorAccent">#67daff</color>
+    <color name="primaryTextColor">#000000</color>
+    <color name="secondaryTextColor">#ffffff</color>
+    <color name="eveningColorSection">#A6BF00</color>
+    <color name="nightColorSection">#373737</color>
+    <color name="feedReaderBackground">#E62c3e50</color>
+    <color name="dark_gray">#bdc3c7</color>
+
+    <!-- In application Color Themes -->
+    <color name="lovePost">#c0392b</color>
+    <color name="black_alpha_40">#A6000000</color>
+    <color name="medication_pillbox">#bdc3c7</color>
+    <color name="time_selection_background">#dedede</color>
+</resources>
